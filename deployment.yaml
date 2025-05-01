@@ -1,0 +1,18 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: deploy-exe
+spec:
+  replicas: 4
+  selector:
+    matLabels:
+      labels:
+        app: front-end
+  templet:
+    meatadata: 
+      app: front-end
+    spec:
+      image:
+      name: busybox
+        container:
+        port: 80

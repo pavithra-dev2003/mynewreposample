@@ -1,2 +1,0 @@
-# mynewreposample
-code sample
